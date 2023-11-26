@@ -1,4 +1,5 @@
 [flake8]
+indent-size = 2
 exclude = 
     migrations,
     __pycachce__,
