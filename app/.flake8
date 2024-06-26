@@ -1,6 +1,6 @@
 [flake8]
 indent-size = 2
-exclude = 
+exclude =
     migrations,
     __pycachce__,
     manage.py,
