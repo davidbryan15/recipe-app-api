@@ -26,6 +26,7 @@ class ModelTests(TestCase):
 
   def test_new_user_email_normalized(self):
     """Test email is normalized for new users."""
+
     sample_emails = [
       ["test1@EXAMPLE.com", "test1@example.com"],
       ["Test2@Example.com", "Test2@example.com"],
