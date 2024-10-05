@@ -19,3 +19,10 @@ class RecipeViewSet(viewsets.ModelViewSet):
   def get_queryset(self):
     """Retrieve recipers for authenticated user"""
     return self.queryset.filter(user=self.request.user).order_by('-id')
+
+  def get_serializer_class(self):
+    """return the serializer class for the request."""
+    if self.action == "list":
+      return serializers.RecipeSerializer
+
+    return self.serializer_class
